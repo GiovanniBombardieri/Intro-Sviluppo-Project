@@ -1,0 +1,297 @@
+@font-face {
+  font-family: 'Black Mango';
+  src: url(/assets/font/BlackMango.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* NAVIGATION BAR */
+.navigationBar {
+  width: 100%;
+  height: 100px;
+
+  background-color: #f3ecec;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 0 50px 0 100px;
+}
+
+.logo {
+  width: 100px;
+}
+
+.buttons {
+  width: 50%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  div {
+    padding: 10px;
+    border-radius: 20px;
+  }
+}
+
+.buttons div:hover {
+  background-color: #91934e;
+  color: #fff;
+}
+
+button {
+  margin-left: 30px;
+  padding: 10px;
+
+  border: none;
+  border-radius: 20px;
+
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 17px;
+
+  background-color: #7d2703;
+}
+
+button:hover {
+  padding: 15px;
+  transition: all 0.5s ease-in-out;
+}
+
+/* HOME PAGE */
+
+.homePage {
+  width: 100%;
+  height: 800px;
+
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  h1 {
+    font-family: 'Black Mango';
+    font-size: 100px;
+    text-align: center;
+  
+    color: #7d2703;
+  
+    padding-top: 100px;
+  }
+
+  h2 {
+    text-align: center;
+  
+    color: #fff;
+    line-height: 2;
+  
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+}
+
+
+.prenotation {
+  width: 800px;
+  height: 50px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.date {
+  width: 600px;
+
+  border: 1px solid #000;
+  border-radius: 20px;
+
+  margin-right: 20px;
+
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.arrivalDate {
+  width: 300px;
+  border-right: 1px solid #000;
+
+  text-align: center;
+  align-content: center;
+  
+  input {
+    margin-left: 15px;
+    border: 1px solid #000;
+    border-radius: 5px;
+
+    font-size: 15px;
+  }
+
+  input:hover {
+    cursor: pointer;
+  }
+}
+
+.departureDate {
+  width: 300px;
+
+  text-align: center;
+  align-content: center;
+  
+  input {
+    margin-left: 15px;
+    border: 1px solid #000;
+    border-radius: 5px;
+
+    font-size: 15px;
+  }
+
+  input:hover {
+    cursor: pointer;
+  }
+}
+
+.continue {
+  width: 200px;
+  text-align: center;
+  align-content: center;
+
+  background-color: #91934e;
+
+  border: 1px solid #fff;
+  border-radius: 20px;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.continue:hover {
+  border: 1px solid #7d2703;
+
+  a {
+    color: #7d2703;
+  }
+}
+
+.freccia {
+  width: 50px;
+  margin-top: 50px;
+}
+
+.scopriNascita {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scopriNascita:hover {
+  img {
+    background-color: #7d2703;
+    border-radius: 100px;
+    border-width: 50px;
+    width: 70px;
+  
+    transition: all 0.1s ease-in-out;
+  }
+
+  p {
+    display: block;
+  }
+}
+
+.nascita {
+  margin-top: 20px;
+  background-color: #7d2703;
+  color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+
+  display: none;
+}
+
+/* DA DOVE NASCE L'IDEA */
+.daDoveNasce {
+  width: 100%;
+  height: 300px;
+  background-color: #f3ecec;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  width: 10%;
+  text-align: end;
+
+  img {
+    width: 80px;
+  }
+}
+
+.title {
+  width: 30%;
+  
+  text-align: center;
+}
+
+.text {
+  width: 60%;
+  text-align: justify;
+  padding: 100px;
+  line-height: 1.8;
+
+  p {
+    border-left: 2px solid #7d2703;
+    padding-left: 10px;
+  }
+}
+
+/* VISION */
+.vision {
+  height: 500px;
+  background-color: #91934e8a;
+  text-align: center;
+  padding: 50px;
+
+  h1 {
+    font-family: 'Black Mango';
+    font-size: 70px;
+    color: #7d2703;
+    text-shadow: -1px -1px #fff;
+  }
+
+  section {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.visionImage img {
+  height: 300px;
+  border-radius: 20px;
+}

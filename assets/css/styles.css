@@ -255,7 +255,6 @@ button:hover {
 
 .title {
   width: 30%;
-  
   text-align: center;
 }
 
@@ -266,17 +265,20 @@ button:hover {
   line-height: 1.8;
 
   p {
-    border-left: 2px solid #7d2703;
+    border-left: 5px solid #7d2703;
     padding-left: 10px;
   }
 }
 
 /* VISION */
-.vision {
-  height: 500px;
-  background-color: #91934e8a;
-  text-align: center;
-  padding: 50px;
+.valori {
+  background-size: cover;
+  height: 450px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   h1 {
     font-family: 'Black Mango';
@@ -285,13 +287,177 @@ button:hover {
     text-shadow: -1px -1px #fff;
   }
 
-  section {
-    display: flex;
-    flex-direction: row;
+  p {
+    font-size: 20px;
   }
 }
 
-.visionImage img {
-  height: 300px;
-  border-radius: 20px;
+.vision, .mission {
+  width: 30%;
+}
+
+.vision {
+  text-align: left;
+  padding-left: 50px;
+  margin-left: 30px;
+  border-left: 5px solid #7d2703;
+}
+
+.mission {
+  text-align: right;
+  padding-right: 50px;
+  margin-right: 30px;
+  border-right: 5px solid #7d2703;
+}
+
+/* CHI SIAMO */
+
+.chiSiamo {
+  height: 850px;
+
+  background-color: #7d28035b;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-family: 'Black Mango';
+    font-size: 70px;
+    color: #fff;
+    text-shadow: -1px -1px #7d2703;
+
+    padding: 30px 0 50px 0;
+  }
+
+  img {
+    width: 80%;
+    border-radius: 100px;
+  }
+}
+
+.firstP {
+  width: 80%;
+  margin-top: 50px;
+  padding-left: 10px;
+
+  border-left: 5px solid #91934e;
+
+  font-size: 20px;
+  text-align: start;
+}
+
+.secondP {
+  width: 80%;
+  font-family: 'Black Mango';
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 1px 1px #7d2703;
+
+  text-align: end;
+}
+
+/* COME FUNZIONA */
+.comeFunziona {
+  height: max-content;
+  padding-top: 50px;
+
+  background-color: #f3ecec;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    width: 100%;
+    height: 100px;
+
+    text-align: center;
+    font-family: 'Black Mango';
+    font-size: 70px;
+
+    color: #7d2703;
+    text-shadow: -1px -1px #fff;
+
+    margin-bottom: 50px;
+  }
+}
+
+
+.slider-container {
+    width: 800px;
+    height: 400px;
+    border-radius: 20px;
+    background-color: #7d2703;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.image-container {
+    width: 2400px;
+    background-color: #91934e;
+    height: 400px;
+    clear: both;
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+
+    transition: left 2s;
+}
+
+#slider-image-1:target ~ .image-container {
+   left: 0px;
+}
+#slider-image-2:target ~ .image-container {
+   left: -800px;
+}
+#slider-image-3:target ~ .image-container {
+   left: -1600px;
+}
+
+.button-container {
+	position: relative;
+	top: -20px;
+}
+.slider-change {
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+	border-radius: 5px;
+	background-color: #fff;
+}
+
+.comeFunzionaText {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  line-height: 1.7;
+}
+
+.comeFunzionaUno {
+  width: 50%;
+  margin: 0 25px 100px 50px;
+  padding: 20px;
+  border-left: 5px solid #7d2703;
+}
+
+.comeFunzionaDue {
+  width: 50%;
+  height: fit-content;
+  margin: 0 50px 0 25px;
+  padding: 20px;
+  border-left: 5px solid #7d2703;
+}
+
+.specialWords {
+  display: inline-flex;
+  font-family: 'Black Mango';
+  color: #7d2703;
+  font-size: 20px;
 }

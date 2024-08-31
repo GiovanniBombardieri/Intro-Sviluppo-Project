@@ -278,8 +278,8 @@ button:hover {
   width: 100%;
 
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 
   h1 {
     font-family: 'Black Mango';
@@ -291,6 +291,14 @@ button:hover {
   p {
     font-size: 20px;
   }
+}
+
+.visionMission {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 100px;
 }
 
 .vision, .mission {
@@ -311,10 +319,28 @@ button:hover {
   border-right: 5px solid #7d2703;
 }
 
+.frecciaSu {
+  text-align: end;
+  padding-top: 35px;
+  margin-right: 50px;
+ 
+  img {
+    width: 50px;
+  }
+
+  img:hover {
+    background-color: #7d2703;
+    border-radius: 100px;
+    width: 55px;
+
+    transition: all 0.1s ease-in-out;
+  }
+}
+
 /* CHI SIAMO */
 
 .chiSiamo {
-  height: 850px;
+  height: 950px;
 
   background-color: #7d28035b;
 
@@ -330,11 +356,11 @@ button:hover {
 
     padding: 30px 0 50px 0;
   }
+}
 
-  img {
-    width: 80%;
-    border-radius: 100px;
-  }
+.fotoFamiglia {
+  width: 80%;
+  border-radius: 100px;
 }
 
 .firstP {
@@ -356,6 +382,23 @@ button:hover {
   text-shadow: 1px 1px #7d2703;
 
   text-align: end;
+}
+
+.frecciaSu2 {
+  margin-top: 50px;
+  margin-left: 1320px;
+
+  img {
+    width: 50px;
+  }
+
+  img:hover {
+    background-color: #7d2703;
+    border-radius: 100px;
+    width: 55px;
+
+    transition: all 0.1s ease-in-out;
+  }
 }
 
 /* COME FUNZIONA */
@@ -491,6 +534,23 @@ button:hover {
   font-size: 20px;
 }
 
+.frecciaSu3 {
+  margin-bottom: 50px;
+  margin-left: 1320px;
+
+  img {
+    width: 50px;
+  }
+
+  img:hover {
+    background-color: #7d2703;
+    border-radius: 100px;
+    width: 55px;
+
+    transition: all 0.1s ease-in-out;
+  }
+}
+
 /* FOOTER */
 footer {
   width: 100%;
@@ -533,5 +593,10 @@ footer {
   img {
     width: 35px;
     margin-left: 10px;
+  }
+
+  img:hover {
+    border-bottom: 2px solid #7d2703;
+    transition: all 0.2s ease-in-out;
   }
 }
